@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PSX Value List</title>
+
+<!-- Fredoka One Font -->
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Fredoka One', cursive;
+  background: #0f0f1a;
+  color: white;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background: #1b1b2e;
+  font-size: 26px;
+}
+
+.row-title {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 20px;
+  color: #66aaff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  background: #1c1c2f;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.name {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.value {
+  color: #00ff99;
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+.demand {
+  color: #ffcc00;
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+/* 🌈 RAINBOW STYLE */
+.rainbow {
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: move 3s linear infinite;
+}
+
+@keyframes move {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+.rainbow-card {
+  border: 2px solid transparent;
+  background: linear-gradient(#1c1c2f, #1c1c2f) padding-box,
+              linear-gradient(90deg, red, orange, yellow, green, blue, violet) border-box;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">PSX Nostalgia Value List</div>
+
+<!-- HUGE -->
+<div class="row-title">Huge Pets</div>
+<div class="container">
+
+  <div class="card">
+    <img src="https://i.imgur.com/E4amF4b.png">
+    <div class="name">Huge Cat</div>
+    <div class="value">Value: 50M Gems</div>
+    <div class="demand">Demand: 9/10</div>
+  </div>
+
+  <div class="card">
+    <img src="https://i.imgur.com/yH4QzzD.png">
+    <div class="name">Huge Samurai Dragon</div>
+    <div class="value">Value: 25M Gems</div>
+    <div class="demand">Demand: 8/10</div>
+  </div>
+
+  <div class="card">
+    <img src="https://i.imgur.com/pRjSoFZ.png">
+    <div class="name">Huge Dragon</div>
+    <div class="value">Value: 15M Gems</div>
+    <div class="demand">Demand: 8/10</div>
+  </div>
+
+</div>
+
+<!-- GOLD -->
+<div class="row-title">Gold Variants</div>
+<div class="container">
+
+  <div class="card">
+    <img src="https://i.imgur.com/E4amF4b.png">
+    <div class="name">Gold Huge Cat</div>
+    <div class="value">Value: N/A</div>
+    <div class="demand">Demand: 7/10</div>
+  </div>
+
+  <div class="card">
+    <img src="https://i.imgur.com/yH4QzzD.png">
+    <div class="name">Gold Huge Samurai Dragon</div>
+    <div class="value">Value: N/A</div>
+    <div class="demand">Demand: 7/10</div>
+  </div>
+
+  <div class="card">
+    <img src="https://i.imgur.com/pRjSoFZ.png">
+    <div class="name">Gold Huge Dragon</div>
+    <div class="value">Value: N/A</div>
+    <div class="demand">Demand: 7/10</div>
+  </div>
+
+</div>
+
+<!-- RAINBOW -->
+<div class="row-title rainbow">Rainbow Variants</div>
+<div class="container">
+
+  <div class="card rainbow-card">
+    <img src="https://i.imgur.com/E4amF4b.png">
+    <div class="name rainbow">Rainbow Huge Cat</div>
+    <div class="value rainbow">Value: N/A</div>
+    <div class="demand rainbow">Demand: 10/10</div>
+  </div>
+
+  <div class="card rainbow-card">
+    <img src="https://i.imgur.com/yH4QzzD.png">
+    <div class="name rainbow">Rainbow Huge Samurai Dragon</div>
+    <div class="value rainbow">Value: N/A</div>
+    <div class="demand rainbow">Demand: 10/10</div>
+  </div>
+
+  <div class="card rainbow-card">
+    <img src="https://i.imgur.com/pRjSoFZ.png">
+    <div class="name rainbow">Rainbow Huge Dragon</div>
+    <div class="value rainbow">Value: N/A</div>
+    <div class="demand rainbow">Demand: 10/10</div>
+  </div>
+
+</div>
+
+</body>
+</html>
